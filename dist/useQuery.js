@@ -178,7 +178,7 @@ function useQuery(document, variables, options) {
         if (!started || restarting)
             return;
         restarting = true;
-        vue_1.default.nextTick(function () {
+        vue_1.nextTick(function () {
             if (started) {
                 stop();
                 start();
